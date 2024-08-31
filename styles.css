@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css?family=Allura|Josefin+Sans');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+p {
+    margin-bottom: 15px;
+    font-size: 17px;
+    line-height: 20px;
+    color: #dbcacaeb;
+}
+
+h1.title {
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-family: 'Allura', cursive;
+    text-transform: uppercase;
+    font-size: 38px;
+    word-spacing: 25px;
+    letter-spacing: 5px;
+}
+
+.btn a {
+    display: block;
+    width: 180px;
+    height: 35px;
+    border: 2px solid #fb2274;
+    line-height: 35px;
+    margin: 25px auto 0;
+    color: #fb2274;
+    text-align: center;
+}
+
+/* Main Container */
+.main_container {
+    position: relative;
+}
+
+/* Navigation bar */
+.navbar {
+    width: 100%;
+    height: 65px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    background: rgba(0, 0, 0, 0.647); /* Optional: Add a background color to the navbar */
+}
+
+.logo a {
+    font-family: 'Allura', cursive;
+    font-size: 40px;
+    color: #fb2274;
+}
+
+.navbar .navbar_items ul {
+    display: flex;
+}
+
+.navbar .navbar_items ul li {
+    text-transform: uppercase;
+    margin: 0 10px;
+}
+
+.navbar .navbar_items ul li a {
+    color: #fff;
+}
+
+/* Banner Image */
+.banner_image {
+    background: url("main-bg.jpg") no-repeat top center;
+    background-size:cover;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner_content {
+    text-align: center;
+    color: #fff;
+    background: #00000057;
+}
+
+.banner_content h1 {
+    text-transform: uppercase;
+    line-height: 38px;
+    margin-bottom: 15px;
+}
+
+.banner_content h1 span {
+    color: #fb2274;
+}
+
+/* About Us, Services, Contact Us, Our Team */
+.about, .services, .contactus, .ourteam {
+    padding: 5% 10%;
+    text-align: center;
+}
+.about{
+    background: #0000008a;
+}
+
+/* Services */
+.services {
+    background: #292828eb;
+}
+
+.diff_services {
+    display: flex;
+    margin-top: 35px;
+    justify-content: space-between;
+}
+
+.diff_service_item {
+   border: #ede4e4;
+   border-color: #ede4e4;
+   border-radius: 4%;
+    width: 20%;
+    
+}
+
+.diff_service_item img {
+    width: 100%;
+    margin-bottom: 25px;
+  
+}
+
+.diff_service_item h3 {
+    color: #fb2274;
+    margin-bottom: 20px;
+}
+
+/* Contact Us */
+.form_input {
+    margin-bottom: 15px;
+}
+
+.form_input input[type="text"] {
+    width: 250px;
+    padding: 12px 20px;
+    border: 1px solid #ccc;
+}
+
+.form_input textarea {
+    width: 250px;
+    padding: 12px 20px;
+    height: 80px;
+    resize: none;
+    border: 1px solid #ccc;
+}
+
+
+/* Footer */
+.footer {
+    width: 100%;
+    text-align: center;
+    background: #444444;
+    padding: 20px 0;
+}
+
+.footer a {
+    color: #fff;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 720px) {
+    .navbar {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo {
+        margin-bottom: 25px;
+    }
+
+    .navbar ul li {
+        margin-bottom: 5px;
+    }
+
+    .banner_content {
+        margin-top: 35px;
+    }
+}
+/* new css added for contact us page */
+body {
+    background-image: url('whole-bg.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed; 
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; 
+}
+
+
+.container {
+    max-width: 500px;
+    margin: 50px auto;
+    background-color: rgba(80, 77, 77, 0.399); 
+    padding: 40px;
+    border-radius: 13px;
+    box-shadow: 0 4px 15px rgb(0, 0, 0);
+}
+
+.row.header h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-family: 'Allura', cursive;
+    text-transform: uppercase;
+    font-size: 38px;
+    word-spacing: 25px;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+    color: #fefefe;
+}
+
+.row.header h3 {
+    text-align: center;
+    font-size: 1.2em;
+    color: #ede4e4;
+}
+
+form ul {
+    list-style-type: none;
+    padding: 10px;
+}
+
+form ul li {
+    margin-bottom: 15px;
+}
+
+
+
+.two-column {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; 
+}
+
+
+.two-column .left, .two-column .right {
+    width: 48%;
+}
+
+label {
+    font-size: 1em;
+    color: #ffffff;
+    margin-bottom: 7px; 
+    display: block;
+}
+
+
+
+input[type="text"], input[type="email"], textarea {
+    background-color: rgba(0, 0, 0, 0.086);
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ffffff79;
+    border-radius: 5px;
+    font-size: 1em;
+    color: #ede4e4bd;
+}
+
+textarea {
+    resize: none;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+    border-color: #ffffffa8;
+    outline: none;
+    color: #ede4e4ab;
+}
+
+.divider {
+    height: 1px;
+    background-color: #ffffffa7;
+    margin: 15px 0;
+}
+
+.btn-submit {
+  
+    background-color: #fb2274;
+    color: white;
+    border: 1px;
+    padding: 10px 20px;
+    border-radius: 9px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.btn-submit:hover {
+    background-color:#fb2274;
+}
+
+
+/* 
+.pull-right {
+    float: right;
+} */
+
+
+
